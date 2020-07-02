@@ -41,8 +41,8 @@ namespace Inheritance
             Console.WriteLine($"Color : {pelican1.color}");
             Console.WriteLine($"Feet Count : {pelican1.feet}");
             Console.WriteLine($"Food Type : {pelican1.foodType}");
-            Console.WriteLine($"Movement : {pelican1.skinType}");
-            Console.WriteLine($"Weapon : {pelican1.mouthType}");
+            Console.WriteLine($"Skin Type : {pelican1.skinType}");
+            Console.WriteLine($"Mouth Type : {pelican1.mouthType}");
 
             Console.WriteLine("-----------------------------------------");
             // Crocodile Print
