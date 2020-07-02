@@ -6,34 +6,52 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            //New instances
+            Reptile crocodile1 = new Reptile();
+            Bird pelican1 = new Bird();
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            // Assigning value to class blueprint
 
+            //Pelican1 & Adding Propertues from animal class
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            pelican1.foodType = "Meat";
+            pelican1.color = "White";
+            pelican1.feet = 2;
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
+            // Now adding properties from Bird Class
 
+            pelican1.skinType = "Feathers";
+            pelican1.mouthType = "Beak";
 
+            //Crocodil1 & Adding properties from animal class
 
+            crocodile1.foodType = "Meat";
+            crocodile1.color = "green";
+            crocodile1.feet = 4 ;
 
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            // Now add from properties from Reptile class
 
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
+            crocodile1.movement = "Crawl";
+            crocodile1.weapon = "Jaws";
+
+            // Returning & Printing everything to console
+
+            // Pelican print
+            Console.WriteLine("Pelican features:");
+            Console.WriteLine($"Color : {pelican1.color}");
+            Console.WriteLine($"Feet Count : {pelican1.feet}");
+            Console.WriteLine($"Food Type : {pelican1.foodType}");
+            Console.WriteLine($"Movement : {pelican1.skinType}");
+            Console.WriteLine($"Weapon : {pelican1.mouthType}");
+
+            Console.WriteLine("-----------------------------------------");
+            // Crocodile Print
+            Console.WriteLine("Crocodile features:");
+            Console.WriteLine($"Color : {crocodile1.color}");
+            Console.WriteLine($"Feet Count : {crocodile1.feet}");
+            Console.WriteLine($"Food Type : {crocodile1.foodType}");
+            Console.WriteLine($"Movement : {crocodile1.movement}");
+            Console.WriteLine($"Weapon : {crocodile1.weapon}");
         }
     }
 }
